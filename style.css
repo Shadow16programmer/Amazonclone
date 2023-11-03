@@ -1,0 +1,597 @@
+html,body{
+    height: 100%;
+    width:100%;
+    margin:0px;
+    padding:0px;
+    overflow:hidden;
+   overflow-y: visible;
+    border:border-box;
+    font-family:arial;
+    
+ 
+   
+}
+body{
+  background-color:   #131A22;
+      
+}
+.navbar{
+    height:65px;
+    width:100%;
+    background-color: #0f1111;
+    color:white;
+    padding-left:5px ;
+    display:flex;
+    align-items: center;
+    justify-content: space-evenly;
+ 
+}
+.nav-logo{
+    height:55px;
+    width:130px;
+  
+}
+.logo{
+    height:100%;
+    width:100%;
+    background-image: url(amazon_logo.png) ;
+    background-size: cover;
+}
+.nav-elements {
+    border:1px solid transparent;
+    height:55px;
+}
+.nav-elements:hover{
+    border:1px solid white;
+   
+}
+#select-location{
+    font-size:15px;
+    margin-top: 0px;
+    margin-bottom: 0px;
+}
+.country-options{
+    height:50px;
+    width:30px;
+}
+.location{
+    height:40px;
+}
+.search{
+    display:flex;
+    height:auto;
+    width:auto;
+    
+}
+
+#select-categories{
+    height:40px;
+    border-top-left-radius: 5px;
+    border-bottom-left-radius: 5px ;
+   
+
+}
+#search-amazon{
+    height:40px;
+    width:350px;
+}
+
+#search-button{
+    height: 42px;
+    width:40px;
+    background-color: orange ;
+    border-top-right-radius: 5px;
+    border-bottom-right-radius: 5px
+}
+.category-options{
+    background-color: black;
+    color: white;
+   }
+   #language-selection{
+    background-color: black;
+    color:white;
+    height:45px;
+    width:105px;
+    align-self: center;
+   
+   }
+   
+    .dropdiv{
+        height:auto;
+        width:auto;
+        padding-bottom: 40px;
+        margin-top: 35px;
+       
+    }
+   .account{
+    height:40px;
+    
+   }
+   #hello{
+    color:white;
+    font-size: 13px;
+    margin: 0%;
+    
+    
+
+   }
+   #youraccount{
+    font-size:16px ;
+    color:white;
+    margin: 0%;
+    font-weight: bold;
+   }
+
+#account-div{
+    background-color: white;
+    display:none;
+   background-color:#0f1111 ;
+    position:absolute;
+    top:70px;
+    right:100px;
+    border:0.5px solid black;
+    width:450px;
+   z-index: 5;
+    color: white;
+    
+
+}
+
+   #Signin{
+    height:30px;
+    width:218px;
+    background-color: orange;
+    color:black;
+    text-align: center;
+   }
+   #list{
+    height:370px;
+    width:222.3px;
+    float:left;
+    border:0.5px solid black;
+    color:black;
+    font-size: 15px;
+    line-height: 180%;
+    display:block;
+    background-color: white;
+   }
+   #yourlist{
+    font-weight: bolder;
+    font-size: 20px;
+    text-align:center;
+    background-color: white;
+   }
+   .accountbox{
+    height:370px;
+    width:225px;
+    float:right;
+    border:0.5px solid black;
+    color:black;
+    font-size: 15px;
+    line-height: 180%;
+    background-color: white;
+   
+
+   }
+
+   .dropdiv:hover #account-div{
+    display:block;
+   }
+   #return{
+    font-size: 13px;
+   margin-top: 7px;
+   margin-bottom: 0%;
+    color: white;
+   
+   
+   }
+   #order{
+    font-size: 16px;
+    margin: 0%;
+    color: white;
+    font-weight: bold;
+   
+   }
+
+   .cartdiv{
+    height:auto;
+    width:auto;
+    margin: 0%;
+    display:flex;
+    align-items: center;
+   }
+  
+   
+   .cart{
+    margin: 0%;
+    font-size: 18px;
+    font-weight: 500;
+    padding: 15px 5px 15px 5px;
+   }
+
+   .mainimage{
+    height:430px;
+    width:100%;
+    position: relative;
+    background-image: url(hero_image.jpg);
+    background-size: cover;
+   
+   
+ 
+   }
+   .imgtext{
+     height:40px;
+     width:80%;
+     display: block;
+     position:relative; 
+     bottom:100px;
+     left:10%;
+     background-color: white;
+     margin-bottom: 30px;
+   
+   }
+   .text1{
+    font-size: 17px;
+    text-align: center;
+    color: black;
+    padding-top: 10px;
+   }
+   .triangle{
+    width: 100px;
+	height: 60%;
+    display: block;
+    position: absolute;
+    top:5px;
+    border-top: 40px solid transparent;
+    border-left: 230px solid rgba(15, 17, 17,0.75);
+    border-right: 30px solid transparent;
+    border-bottom: 40px solid transparent;
+     
+   
+}
+.text3{
+    width:100px;
+    height:150px;
+  
+    position: relative;
+    top:50px;
+    left:0px;
+    width:200px;
+   
+}
+#triangletext{
+    color:rgb(255, 253, 253);
+    font-size: 30px;
+    font-weight: bold;
+     position: absolute;
+     top:10px;
+     left:10px;
+    line-height: 180%;
+    display: inline;
+    width:100%;
+}
+#smile{
+    color:white;
+    position: absolute;
+    left:60px;
+    top:160px;
+}
+.shop-area{
+    position: relative;
+    bottom: 100px;
+    background-image: linear-gradient(#C5D7D9,#c5d1d9,white);
+    width:100%;
+    height:auto;
+    display:flex;
+    flex-wrap: wrap;
+    justify-content: space-evenly;
+}
+.box{
+    height:400px;
+    width:23%;
+    border: 1px solid black;
+    background-color: white;
+    margin-top: 20px;
+   
+}
+.box-content{
+    height:90%;
+    margin-bottom: 35px ;
+    padding:0px 20px;
+}
+.box-head{
+    font-size: 25px;
+    font-weight: bolder;
+}
+.box-image{
+    height:275px;
+    background-size: cover;
+}
+
+.watch-row{
+    width:96%;
+     background-color: white;
+    margin-left: 20px;
+    margin-right: 20px;
+    border: 1px solid rgb(78, 78, 78);
+    margin-top: 30px;
+}
+.watch-row p{
+    font-size: 23px;
+    font-weight: bolder;
+    margin: 0%;
+    padding-top: 20px;
+    padding-left: 5px;
+    display: inline-block;
+}
+.watch-row-content{
+    padding-top: 20px;
+    padding-bottom: 20px;
+    display:flex;
+    justify-content: space-evenly;
+    padding-left: 10px;
+    padding-right: 5px;
+}
+.watch{
+    height:180px;
+    width:157px;
+    background-size: cover;
+}
+
+
+/* here deals div will start */
+ 
+.deals{
+    border: 1px solid rgb(78, 78, 78);
+    width:96%;
+    background-color: white;
+    margin-top: 30px;
+}
+.deals p{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0%;
+    padding-top: 20px;
+    padding-left: 7px;
+    display: inline-block; 
+}
+.deals-content{
+    padding: 30px 15px 20px 5px;
+    display:flex;
+    justify-content: space-evenly;
+}
+.deals-box{
+    height:210px;
+    width:200px;
+    background-size: contain;
+    background-repeat: no-repeat;
+}
+
+
+/* here prime div starts  */
+.prime{
+    width:96%;
+    border: 1px solid rgb(78, 78, 78);
+    background-color: white;
+    padding-bottom: 10px;
+    margin-top: 30px;
+}
+.prime p{
+    font-size: 24px;
+    font-weight: bold;
+    margin: 0%;
+    padding-top: 20px;
+    padding-left: 7px;
+    display: inline-block; 
+}
+.prime-content{
+    padding:20px 15px 10px 15px;
+    display:flex;
+    justify-content: space-evenly;
+}
+.prime-box{
+    background-size: cover;
+     width:34%;
+    height:180px;
+}
+#p1{
+    font-size: 25px;
+    margin-left: 100px;
+    font-weight: 550;
+    color:rgb(58, 55, 55);
+   
+    
+}
+#p2{
+    font-size: 25px;
+    margin-left: 130px;
+    font-weight: 550;
+    color:rgb(58, 55, 55)
+}
+   #p3{
+    font-size: 25px;
+    margin-left: 70px;
+    font-weight: 550;
+    color:rgb(58, 55, 55)
+   }
+
+   /* <!-- here multiple image div starts --> */
+
+   .main-div {
+    display: flex;
+    flex-wrap: wrap;
+    width:100%;
+    justify-content: space-evenly;
+    margin-top: 30px;
+   }
+   .main-div-boxes{
+    border: 1px solid  rgb(78, 78, 78);
+    height:350px;
+    width:20%;
+    display:flex;
+    justify-content: space-evenly;
+    flex-wrap: wrap;
+    padding:20px 10px 20px 10px;
+    background-color: white;
+   }
+   .main-box{
+    height:85px;
+    width:120px;
+    background-size: cover;
+    background-repeat: no-repeat;
+   }
+   #mobilead{
+    height:270px;
+    width:270px;
+    margin-left: 30px;
+   
+   }
+   .d2{
+    display:flex;
+    flex-wrap: wrap;
+    width:300px;
+    padding-top: 50px;
+    padding-right: 20px;
+   }
+   .signin2{
+    width:300px;
+    border-radius: 25px;
+    border:1px solid  rgb(78, 78, 78);
+    height:100px;
+    display: inline-block;
+    background-color: white;
+    padding-top: 5px;
+   }
+   .signin2 p{
+    font-size: 20px;
+    margin: 0%;
+    font-weight: bold;
+    text-align: center;
+   }
+   .signin2 button{
+    background-color: rgb(255, 174, 0);
+    width:250px;
+    height:40px;
+    border-radius: 25px;
+    margin-left: 25px ;
+    margin-top: 10px;
+   }
+
+   .sigin4{
+    height:170px;
+    width:100%;
+    border-top: 0.5px solid rgb(78, 78, 78);
+    border-bottom: 0.5px solid rgb(78, 78, 78);
+    padding: 20px 50px  0px 50px;
+    display:flex;
+    justify-content: center;
+    align-items: center;
+    margin-top: 40px;
+   }
+   .sigin4 button{
+    background-color: rgb(255, 174, 0);
+    width:270px;
+    height:40px;
+    border-radius: 10px;
+    margin-left: 25px ;
+    margin-top: 10px;
+    display: block;
+    position: relative;
+    right:38px
+   }
+   .sigin4 span{
+    font-size: 15px;
+   }
+   .sigin4 p{
+    font-size: 13px;
+    position: relative;
+    left:40px
+   }
+
+   /* here my footer starts */
+ footer{
+    position: relative;
+    bottom:100px;
+ }
+  
+   .panel1{
+    background-color: #37475a;
+    height:50px;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 13px;
+    color:white;
+    margin-top: 0px;
+   }
+
+   .panel2{
+    background-color: #232F3E;
+    height:380px;
+    width:100%;
+    display:flex;
+    justify-content: space-evenly;
+    color:white;
+    line-height: 30px;
+   }
+   .panel2 a{
+    color:white;
+    text-decoration: none;
+  
+   
+   }
+   .panel2 ul{
+    list-style-type: none;
+   }
+   .panel2 a:hover{
+    text-decoration: underline;
+   }
+   .panel2 p{
+    font-size: 16px;
+    font-weight: bold;
+    margin-bottom: 10px;
+   }
+   .panel3{
+    position: relative;
+    height:240px;
+   
+    background-color: #131A22;
+   }
+   #lang2{
+         background-color: #1f2323;
+         color: white;
+         height:40px;
+         width: 145px;
+         font-size: 13px;
+        
+   }
+   .panel3 img{
+    height: 90px;
+    
+   
+   }
+   .d6{
+    display:flex;
+    position: absolute;
+    left:35%;
+    top:40px;
+    width:300px;
+    justify-content: space-between;
+    align-items: center;
+   }
+   .country-name{
+    width:98%;
+    height:60px;
+    border: 2px solid white;
+    font-size: 15px;
+    padding-left: 10px;
+    position: absolute;
+    bottom: 0px;
+   }
+   .country-name a{
+    margin-right: 20px;
+    color:white;
+    text-decoration: none;
+    line-height: 30px;
+   }
+  

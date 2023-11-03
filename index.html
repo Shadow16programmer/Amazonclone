@@ -1,0 +1,397 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/6.4.2/css/all.min.css" integrity="sha512-z3gLpd7yknf1YoNbCzqRKc4qyor8gaKU1qmn+CShxbuBusANI9QpRohGBreCFkKxLhei6S9CQXFEbbKuqLg0DA==" crossorigin="anonymous" referrerpolicy="no-referrer" />
+    <link rel="shortcut icon" type="image/x-icon" href="favicon-16x16.png"> 
+</head>
+<body>
+<header>
+    <div class="navbar">
+     <div class="nav-logo nav-elements">
+        <div class="logo">
+            
+        </div>
+     </div>
+     <div class="location nav-elements">
+        <p id="select-location" style="color:#cccccc; margin-left:10px;">Select Country</p>
+        <div class="select-country">
+            <i class="fa-solid fa-location-dot"></i>
+
+            <select name="country" id="" class="location-option" style="background-color: black; color:white; font-size: 13px;">
+             <option> India     </option>
+            <option> America   </option>
+            <option> Australia </option>
+             <option> UK </option>
+            <option> Dubai </option> 
+             <option> Canada </option>
+            <option>France  </option>
+             <option> China </option>
+             <option> Belgium </option>
+
+         </select>
+           
+        </div>
+     </div>
+     <div class="search">
+             <div class="category-selection">
+          <select name="categories" id="select-categories" placeholder="categories">
+            <option disabled selected hidden > categories </option>
+        <option class="category-options">   Clothes         </option>
+         <option class="category-options">  Electronics </option>
+         <option class="category-options">  Toys           </option>
+         <option class="category-options">  Women Fashion </option>  
+        <option class="category-options">   Groceries      </option>
+        <option class="category-options">   Books           </option>
+         <option class="category-options">   Household       </option>
+        <option class="category-options">   Health           </option>
+        <option class="category-options">   Computers         </option>
+        <option class="category-options">   Kitchen          </option>
+        <option class="category-options">  Men's Fashion     </option>
+        <option class="category-options">  Sports         </option>
+        <option class="category-options">  Software         </option>
+       <option class="category-options">   Kindle store    </option>
+     </select>
+      </div>
+      <div class="search-amazon">
+        <input type="search" placeholder="Search Amazon" maxlength="200" id="search-amazon">
+      </div>
+      <div class="search-icon">
+      <button id="search-button"><i class="fa-solid fa-magnifying-glass"></i></button>
+      </div>
+
+
+     </div>
+     <div class="choose-language nav-elements">
+        <select name="languages" id="language-selection">
+            <option value="english"> Lang:English </option>
+            <option value="german"> Lang:german </option>
+            <option value="french"> Lang:French </option>
+            <option value="spanish"> Lang:Spanish  </option>
+            <option value="chinese"> Lang:Chinese</option>
+            <option value="pourtegse"> Lang:Pourtegese </option>
+            <option value="hindi"> Lang:Hindi </option>
+
+        </select>
+     </div>
+     <div class="dropdiv">
+     <div class="account nav-elements">
+        <p id="hello"> Hello,sign in</p> 
+        <p id="youraccount"> Your Account <i class="fa-solid fa-arrow-down"></i> </p>
+    
+     <div id="account-div"> <center>
+        <button id="Signin"> Sign In</button>
+        <p style="font-size: 15px; color:white;"> New To Amazon, <a href="https://www.amazon.com/ap/register?openid.pape.max_auth_age=0&openid.return_to=https%3A%2F%2Fwww.amazon.com%2F%3F_encoding%3DUTF8%26ref_%3Dnav_newcust&openid.identity=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.assoc_handle=usflex&openid.mode=checkid_setup&openid.claimed_id=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0%2Fidentifier_select&openid.ns=http%3A%2F%2Fspecs.openid.net%2Fauth%2F2.0" target="_main"> Sign up</a>   </p> </center>
+
+        <div class="listandaccounts">
+            <div id="list">
+                <ul>
+              <p>  <a id="yourlist"> Your list </a> </p>
+                <li> <a href="#"> Create a list</a> </li>
+                    <li>  <a href="#"> Find a list for Registery</a> </li>
+                </ul>
+            </div>
+            <div class="accountbox">                                                        
+             <p style="font-size: 20px; color:rgb(0, 0, 0); font-weight: bolder; text-align: center;" >
+                 Your Account</p> 
+                 <ul>
+                    <li> <a href="#"> Account </a> </li>
+                    <li> <a href="#"> Orders </a> </li> 
+                    <li> <a href="#"> Recommandation </a> </li>
+                    <li> <a href="#"> Browsing History </a> </li>
+                    <li> <a href="#">  Watchlist </a> </li>
+                    <li> <a href="#"> Video Purchase and Rentals </a> </li>
+                    <li> <a href="#"> Kindle unlimited</a> </li>
+                    <li> <a href="#">  Content devices </a> </li>
+                    <li> <a href="#"> Membership and Subscription</a> </li>
+                    <!-- <li> <a href="#"> Saved Items</a> </li>
+                    <li> <a href="#"> Music Library</a> </li> -->
+                 </ul>  
+            </div>
+            </div>
+        </div>
+     </div>
+     </div>
+
+
+
+     <div class="orders nav-elements">
+       <p id="return"> Returns </p> 
+        <p id="order">And Orders</p>
+     </div>
+
+     <div class="cartdiv nav-elements">
+        <i class="fa-solid fa-cart-shopping fa-xl"></i>
+        <p class="cart">Cart</p>
+     </div>
+    </div>
+</header> 
+ 
+
+  <div class="mainimage">
+  
+    
+    <div class="triangle">
+        </div>
+       
+        <div class="text3">
+            <p id="triangletext">
+                Spend Less <br>
+                Smile more
+            </p>
+            <i class="fa-regular fa-face-smile fa-3x" id="smile"></i>
+        </div>
+    </div>
+    <div class="imgtext">
+       
+        <p class="text1">You are now on amazon,World's largest online store. 
+            <a href="https://www.amazon.in/?&ext_vrnc=hi&tag=googhydrabk1-21&ref=pd_sl_7hz2t19t5c_e&adgrpid=58355126069&hvpone=&hvptwo=&hvadid=676742234347&hvpos=&hvnetw=g&hvrand=17189124694230349137&hvqmt=e&hvdev=c&hvdvcmdl=&hvlocint=&hvlocphy=9302611&hvtargid=kwd-10573980&hydadcr=14453_2367553" target="_main"> Click here to go on Amazon India.</a>  </p>
+        
+    </div>
+
+</div>
+<div class="shop-area">
+    <div class="box"> 
+        <div class="box-content">
+        <h2 class="box-head"> Clothes</h2>
+        <div class="box-image" style="background-image: url(box1_image.jpg);"></div>
+        <p class="box-text"> <a href="#"> See More</a></p>
+        </div>
+    </div>
+
+    <div class="box"> 
+        <div class="box-content">
+        <h2 class="box-head"> Health Care </h2>
+        <div class="box-image" style="background-image: url(box2_image.jpg);"></div>
+        <p class="box-text"> <a href="#"> See More</a></p>
+        </div>
+    </div>
+
+    <div class="box"> 
+        <div class="box-content">
+        <h2 class="box-head"> Furniture for Homes </h2>
+        <div class="box-image" style="background-image: url(box3_image.jpg);"></div>
+        <p class="box-text"> <a href="#"> See More</a></p>
+        </div>
+    </div>
+
+    <div class="box"> 
+        <div class="box-content">
+        <h2 class="box-head"> Electronics </h2>
+        <div class="box-image" style="background-image: url(box4_image.jpg);"></div>
+        <p class="box-text"> <a href="#"> See More</a></p>
+        </div>
+    </div>
+
+    <div class="box"> 
+        <div class="box-content">
+        <h2 class="box-head"> Beauty picks </h2>
+        <div class="box-image" style="background-image: url(box5_image.jpg);"></div>
+        <p class="box-text"> <a href="#"> See More</a></p>
+        </div>
+    </div>
+
+    <div class="box"> 
+        <div class="box-content">
+        <h2 class="box-head"> Pets's Shop </h2>
+        <div class="box-image" style="background-image: url(box6_image.jpg);"></div>
+        <p class="box-text"> <a href="#"> See More</a></p>
+        </div>
+    </div>
+
+    <div class="box"> 
+        <div class="box-content">
+        <h2 class="box-head"> Kids Toys </h2>
+        <div class="box-image" style="background-image: url(box7_image.jpg);"></div>
+        <p class="box-text"> <a href="#"> See More</a></p>
+        </div>
+    </div>
+
+    <div class="box"> 
+        <div class="box-content">
+        <h2 class="box-head"> Fashion Products </h2>
+        <div class="box-image" style="background-image: url(box8_image.jpg);"></div>
+        <p class="box-text"> <a href="#"> See More</a></p>
+        </div>
+    </div>
+    
+  
+    <div class="watch-row">
+        <p> Starting ₹799 | Bestselling smartwatches from top brands </p>
+        <a href="#" style="margin-left: 10px;"> See more</a>
+        <div class="watch-row-content">
+            <div class="watch" style="background-image: url('watch1.jpg');"></div>
+            <div class="watch" style="background-image: url('watch2.jpg');"></div>
+            <div class="watch" style="background-image: url('watch4.jpg');"></div>
+            <div class="watch" style="background-image: url('watch3.jpg');"></div>
+            <div class="watch" style="background-image: url('watch5.jpg');"></div>
+            <div class="watch" style="background-image: url('watch6.jpg');"></div>
+          
+         </div>
+    </div>
+   
+
+    <!-- here deals div start -->
+
+    <div class="deals">
+        <p> Blockbuster Deals </p>
+        <a href="#" style="padding-left: 10px;"> See more</a>
+        <div class="deals-content">
+            <div class="deals-box" style="background-image: url('deal1.jpg');"></div>
+            <div class="deals-box" style="background-image: url('deal2.jpg');"></div>
+            <div class="deals-box" style="background-image: url('deal3.jpg');"></div>
+            <div class="deals-box" style="background-image: url('deal5.jpg');"></div>
+            <div class="deals-box" style="background-image: url('deal4.jpg');"></div>
+    </div>
+    </div>
+
+    <!-- here prime membership div starts -->
+
+    <div class="prime">
+        <p> Buy prime membership and enjoy benefits</p>
+        <a href="#" style="margin-left: 10px;">See more</a>
+        <div class="prime-content">
+            <div class="prime-box" style="background-image: url('prime-1.jpg');"></div>
+            <div class="prime-box" style="background-image: url('prime-2.jpg');"></div>
+            <div class="prime-box" style="background-image: url('prime-3.jpg');"></div>
+         
+        </div>
+       <div class="prime-text">
+        <p id="p1"> Free fast delivery</p>
+        <p id="p2"> Unlimited Movies and Series</p>
+        <p id="p3"> Unlimited Music Anywhere </p>
+       </div>
+    </div>
+    <div class="main-div">
+        <div class="main-div-boxes">
+        <h2 style="margin: 0%;">    Up to 70% off | Deals on Amazon Brands & more </h2>
+            <div class="main-box" style="background-image: url('box1.jpg');"></div>
+            <div class="main-box"style="background-image: url('box2.jpg');"></div>
+            <div class="main-box"style="background-image: url('box3.jpg');"></div>
+            <div class="main-box"style="background-image: url('box4.jpg');"></div>
+        </div>
+        <div class="main-div-boxes">
+            <h2 style="margin: 0%;">Up to 40% off | Deals on smartphones that suits...</h2>
+            <div class="main-box"style="background-image: url('box5.jpg');"></div>
+            <div class="main-box"style="background-image: url('box6.jpg');"></div>
+            <div class="main-box"style="background-image: url('box7.jpg');"></div>
+            <div class="main-box"style="background-image: url('box8.jpg');"></div>
+        </div>
+        <div class="main-div-boxes">
+            <h2 style="margin: 0%;">Deals on TVs to match every room size</h2>
+            <div class="main-box"style="background-image: url('box9.jpg');"></div>
+            <div class="main-box"style="background-image: url('box10.jpg');"></div>
+            <div class="main-box"style="background-image: url('box11.jpg');"></div>
+            <div class="main-box"style="background-image: url('box12.jpg');"></div>
+        </div>
+        <div class="d2">
+     
+     <a href="https://www.amazon.in/Redmi-Jade-Black-4GB-128GB/dp/B0C9JDHZTB" target="_top"><img src="img.jpg" alt="buy Redmi note 12" id="mobilead"></a>  
+     </div> 
+       </div>
+  <!-- here signin4 starts -->
+  <div class="sigin4">
+    <div class="signd4">
+        <span>Get personalised Recommandation</span>
+        <button>Sign in</button>
+        <p> New customer? <a href="#">Start Here</a>  </p>
+    </div>
+  </div>
+ 
+</div>
+
+<!-- here my footer starts -->
+<footer>
+    <div class="panel1">
+   <span> Back to top <i class="fa-solid fa-angle-up fa-2xl"></i> </span>
+    </div>
+
+    <div class="panel2">
+
+
+        <div class="list1">
+            <ul>
+           <p> Get to Know us</p>     
+         <li> <a href="#"> About us </a> </li>
+         <li><a href="#">  Careers </a> </li>
+         <li><a href="#">  Press release </a> </li>
+         <li><a href="#">  Amazon science </a> </li>
+         </ul>
+        </div>
+
+        <div class="list2">
+            <ul>
+                         <p> Connect with us</p>
+           
+                <li><a href="#"> Facebook </a> </li>
+                <li><a href="#"> Twitter</a> </li>
+                <li><a href="#"> Instagram </a> </li>
+                <li><a href="#"> Youtube </a> </li>
+
+            </ul>
+        </div>
+        <div class="list3">
+            <ul>
+                <p> Make money with us</p>
+                 <li><a href="#"> Sell on Amazon </a> </li>
+                 <li><a href="#">Sell under amazon acclerator </a> </li>
+                 <li><a href="#">Build your Brand </a> </li>
+                 <li><a href="#">Become an Affliate </a> </li>
+                 <li><a href="#">Amazon global selling </a> </li>
+                 <li><a href="#">Fullfilment on Amazon </a> </li>
+                 <li><a href="#">Advertise on Amazon </a> </li>
+                <li><a href="#">Amazon Pay on Merchants </a> </li>
+
+            </ul>
+        </div>
+        <div class="list4">
+            <ul>
+                <p> Let us Help you</p>
+                <li><a href="#"> Covid-19 and Amazon </a> </li>
+                <li><a href="#"> Your Account </a> </li>
+                <li><a href="#" >Return Centre</a> </li>
+                <li><a href="#"> Purchase Protection </a> </li>
+                <li><a href="#"> Amazon App Download </a> </li>
+                <li><a href="#"> Help Centre </a> </li>
+                
+            </ul>
+        </div>
+    </div>
+    <div class="panel3">
+        <div class="d6">
+        <img src="amazon.png" alt="our logo">
+       
+        <select name="lang" id="lang2">
+        <option value="english"> lang: English</option>
+        <option value="hindi"> lang: Hindi   </option>
+       <option value="pourtegse"> lang: pourtegse</option>
+       <option value="german">    lang: German</option>
+       <option value="french">    lang: French</option>
+        </select>
+    </div>
+         <div class="country-name">
+            <a href="#">Australia </a>
+            <a href="#">Brazil</a>
+            <a href="#">Canada</a>
+            <a href="#">China</a>
+            <a href="#">France</a>
+            <a href="#">Germany</a>
+            <a href="#">Italy</a>
+            <a href="#">Japan</a>
+            <a href="#">Mexico</a>
+            <a href="#">Netherlands</a>
+            <a href="#">Poland</a>
+            <a href="#">Singapore</a>
+            <a href="#">Turkey</a>
+            <a href="#">Spain</a>
+            <a href="#">United Arab of emirates</a>
+            <a href="#" style="padding-left: 40% ;">United States</a>
+            <a href="#" >United Kingdom</a>
+        </div>
+    </div>
+</footer>
+</body>
+</html>
